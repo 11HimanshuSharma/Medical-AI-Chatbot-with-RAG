@@ -255,12 +255,6 @@ curl -X POST -F "file=@medical_document.pdf" http://localhost:5000/api/upload
 
 ## 🚀 Deployment
 
-### Docker Deployment
-
-```bash
-# Build and run with Docker Compose
-docker-compose up --build
-```
 
 ### Production Deployment
 
@@ -277,25 +271,6 @@ docker-compose up --build
    gunicorn --bind 0.0.0.0:5000 app:app
    ```
 
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. **Fork the repository**
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Commit your changes**
-   ```bash
-   git commit -m 'Add amazing feature'
-   ```
-4. **Push to the branch**
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-5. **Open a Pull Request**
-
 ### Development Guidelines
 
 - Follow TypeScript/JavaScript best practices
@@ -311,32 +286,7 @@ It should not be used as a substitute for professional medical advice,
 diagnosis, or treatment. Always consult with qualified healthcare professionals
 for medical decisions.
 
-## 🙋‍♂️ Support
 
-- **Documentation**:
-  [Wiki](https://github.com/yourusername/medical-ai-chatbot/wiki)
-- **Issues**:
-  [GitHub Issues](https://github.com/yourusername/medical-ai-chatbot/issues)
-- **Discussions**:
-  [GitHub Discussions](https://github.com/yourusername/medical-ai-chatbot/discussions)
-
-## 🔮 Roadmap
-
-- [ ] **Multi-language Support**: Support for medical documents in different
-      languages
-- [ ] **Voice Interface**: Speech-to-text and text-to-speech capabilities
-- [ ] **Mobile App**: React Native mobile application
-- [ ] **Advanced Analytics**: Usage analytics and performance metrics
-- [ ] **Integration APIs**: FHIR and HL7 integration
-- [ ] **Specialized Models**: Fine-tuned medical LLMs
-- [ ] **Real-time Collaboration**: Multi-user chat sessions
-
-## 📊 Performance
-
-- **Response Time**: < 2 seconds for typical queries
-- **Document Processing**: ~30 seconds per 100-page PDF
-- **Concurrent Users**: Supports 50+ simultaneous users
-- **Memory Usage**: ~2GB RAM for moderate document collections
 
 ## 🏆 Acknowledgments
 
@@ -345,8 +295,4 @@ for medical decisions.
 - **LangChain** for RAG framework inspiration
 - **Medical Community** for guidance on healthcare AI best practices
 
----
 
-**Built with ❤️ for the healthcare community**
-
-_Last updated: June 25, 2025_
