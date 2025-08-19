@@ -102,6 +102,7 @@ function App() {
 
       setMessages(prev => [...prev, assistantMessage]);
     } catch (error) {
+      console.error('Chat request failed:', error);
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         text: "I'm sorry, I encountered an error while processing your medical query. Please try again or contact support if the issue persists.",
